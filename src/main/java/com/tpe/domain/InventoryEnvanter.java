@@ -4,10 +4,10 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class InventoryEnvanter {
-    public class InventoryManager {
+
         private Map<Integer, ProductUrun> inventory;
 
-        public InventoryManager() {
+        public InventoryEnvanter() {
             this.inventory = new HashMap<>();
         }
 
@@ -28,6 +28,5 @@ public class InventoryEnvanter {
         public ProductUrun getProduct(int productId) {
             return inventory.get(productId);
         }
-    }
 
 }
